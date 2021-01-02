@@ -1,11 +1,11 @@
-// New 
+// 'New' Route
 
 app.get('/farms/new',  (req, res) => {
 	const farm = null; 
 	res.render('farms/new_edit', { farm });
 });
 
-// Edit    GET    /farms/:id/edit  - form to update products
+// 'Edit' Route
 
 app.get('/farms/:id/edit', wrapAsync(async (req, res, next) => {
 	const { id } = req.params;
